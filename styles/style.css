@@ -14,7 +14,8 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  padding: 0rem 3.5rem;
+  
+  width: 100%;
 }
 
 h1,
@@ -35,15 +36,18 @@ h2 {
 
 /* project css  */
 
-header{
+header {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
+  padding: 0rem 3.5rem;
 }
-header img{
+
+header img {
   width: 15rem;
 }
-header a{
+
+header a {
   text-decoration: none;
   color: var(--Pink);
   font-size: 1.15rem;
@@ -57,7 +61,7 @@ header a{
   box-shadow: 0px 0px 3px 2px rgba(227, 68, 233, 0.24);
 }
 
-.container{
+.container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -65,24 +69,31 @@ header a{
   gap: 2rem;
 }
 
-.card-1{
+.card-1 {
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
   margin-top: 15rem;
+  padding: 0rem 3.5rem;
 }
-.card-1 h1{
-  font-size: 2.81rem;
+.screen-mockups{
+   width: 100%; 
+} 
+
+.card-1 h1 {
+  font-size: 2.5rem;
+  text-align: center;
 }
-.card-1 p{
+
+.card-1 p {
   width: 60%;
   text-align: center;
   font-size: 1.15rem;
 }
 
-.get-started{
+.get-started {
   border: none;
   color: white;
   background-color: var(--Pink);
@@ -97,31 +108,325 @@ header a{
   -o-border-radius: 2.5rem;
   margin: 2rem 0rem 4rem 0rem;
   box-shadow: 1px 3px 5px 3px rgba(0, 0, 255, .15);
+  padding: 0rem 1rem;
 }
-
-.activity-count{
+.get-started:hover{
+  opacity: 0.75;
+  cursor: pointer;
+}
+.activity-count {
   margin-top: 7rem;
   display: flex;
   justify-content: space-between;
   width: 90%;
   align-items: center;
 }
-.activity-count-part{
+
+.activity-count-part {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
 }
-.activity-count-part img{
+
+.activity-count-part img {
   width: 2.5rem;
 }
-.activity-count-part span{
+
+.activity-count-part span {
   font-size: 6.5rem;
   font-weight: 600;
   opacity: 0.8;
 }
-.activity-count-part p{
+
+.activity-count-part p {
   width: fit-content;
   font-size: 1.25rem;
   opacity: 0.65;
+}
+
+.card-2, .card-4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.card-2 .primary, .card-4 .primary{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.card-2 .content, .card-4 .content{
+  display: flex;
+  background-color: var(--Very-Pale-Blue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.bg-section-mobile {
+  display: none;
+}
+.bg-section-desktop{
+  width: 100%;
+}
+
+.card-image{
+  width: 50%;
+} 
+.part-1{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.part-1 h2{
+  font-size: 2.5rem;
+  opacity: 0.85;
+}
+.part-1 p{
+  width: 90%;
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+.card-3{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.card-3 .content{
+  display: flex;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  
+}
+.card-image-3{
+  width: 40%;
+}
+
+.card-5{
+  margin: 7.5rem 0rem;
+}
+
+.footer-bg-top-mobile{
+  display: none;
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.footer{
+  width: 100%;
+  background-color: var(--Very-Dark-Cyan);
+  padding: 4rem 0rem;
+  display: flex;
+  justify-content: center;
+  
+}
+.footer .content{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.footer-bg-top{
+  width: 100%;
+}
+.brand {
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact span{
+  display: flex;
+  gap: 0.5rem;
+}
+.contact span:hover{
+  color: aqua;
+}
+.icons{
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.icons a:hover{
+  background-color: aqua;
+}
+.footer-logo{
+  width: 15rem;
+}
+.newsletter{
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.newsletter h2{
+  font-size: 2rem;
+}
+.newsletter p{
+  width: 70%;
+  
+}
+.subscribe{
+  display: flex;
+  gap: 1rem;
+}
+.subscribe input{
+  height: 3rem;
+  width: 20rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 0rem 1rem;
+  font-size: 1rem;
+}
+.subscribe input:hover{
+  border: 1px solid var(--Pink);
+  
+}
+.subscribe button{
+  width: 10rem;
+  background-color: var(--Light-Pink);
+  border: none;
+  border-radius: 5px ;
+  -webkit-border-radius: 5px ;
+  -moz-border-radius: 5px ;
+  -ms-border-radius: 5px ;
+  -o-border-radius: 5px ;
+  color: white;
+  font-size: 1rem;
+}
+.subscribe button:hover{
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+/* media queries  */
+@media(max-width:1200px){
+  html{
+    font-size: 14px;
+  }
+}
+@media(max-width:991px){
+  .activity-count-part span {
+    font-size: 4rem;
+  }
+  .brand{
+    width: 15rem;
+  }
+  .newsletter{
+    width: 25rem;
+  }
+  .subscribe input{
+    width: 15rem;
+  }
+  .subscribe button{
+    width: 7.5rem;
+  }
+  .footer-logo{
+    width: 12.5rem;
+  }
+}
+
+@media(max-width:768px){
+  .card-1 {
+    width: 90%;
+  }
+  .card-1 p{
+    width: 90%;
+  }
+  .get-started{
+    width: 80%;
+  }
+  .activity-count{
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+  }
+  .activity-count-part{
+    align-items: center;
+  }
+  .activity-count-part p{
+    width: max-content;
+  }
+  .card-2 .primary, .card-4 .primary{
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+  }
+  .bg-section-desktop{
+    display: none;
+  }
+  .bg-section-mobile {
+    display: block;
+  }
+  .card-3 .content{
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+  }
+  .part-1{
+    width: 90%;
+  }
+  .footer .content{
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .footer-bg-top-mobile{
+    display: block;
+  }
+  .footer-bg-top-desktop{
+    display: none;
+  }
+  .brand {
+    width: 80%;
+    
+  }
+  .footer-logo{
+    width: 15rem;
+  }
+  .newsletter{
+    width: 80%;
+  }
+  .newsletter p{
+    width: 90%;
+    
+  }
+  .subscribe input{
+    width: 60%;
+  }
+  .subscribe button{
+    width: 30%;
+  }
+  .get-started{
+    width: 80%;
+  }
+  header img{
+    width: 7.5rem;
+  }
+  header a {
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+  }
 }
