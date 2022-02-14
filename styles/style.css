@@ -1,0 +1,127 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0rem 3.5rem;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  /* primary */
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+
+  /* neutral */
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+/* project css  */
+
+header{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+header img{
+  width: 15rem;
+}
+header a{
+  text-decoration: none;
+  color: var(--Pink);
+  font-size: 1.15rem;
+  border: 1px solid var(--Pink);
+  padding: 0.25rem 1.75rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  box-shadow: 0px 0px 3px 2px rgba(227, 68, 233, 0.24);
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-1{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 15rem;
+}
+.card-1 h1{
+  font-size: 2.81rem;
+}
+.card-1 p{
+  width: 60%;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.get-started{
+  border: none;
+  color: white;
+  background-color: var(--Pink);
+  width: 40%;
+  height: 5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+  margin: 2rem 0rem 4rem 0rem;
+  box-shadow: 1px 3px 5px 3px rgba(0, 0, 255, .15);
+}
+
+.activity-count{
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+.activity-count-part{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+.activity-count-part img{
+  width: 2.5rem;
+}
+.activity-count-part span{
+  font-size: 6.5rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.activity-count-part p{
+  width: fit-content;
+  font-size: 1.25rem;
+  opacity: 0.65;
+}
